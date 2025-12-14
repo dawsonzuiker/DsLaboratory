@@ -759,4 +759,32 @@ a {
   display: block;
   border-radius: 12px;
 }
+/* GLOBAL BACK BUTTON FIX */
+
+.back-home {
+  position: relative; /* IMPORTANT */
+  display: inline-block;
+  margin: 1.25rem;
+  z-index: 10;
+}
+
+.back-home img {
+  width: 140px;
+  max-width: 45vw;
+  height: auto;
+}
+
+/* MOBILE SPACING FIX */
+@media (max-width: 768px) {
+  .site-header,
+  .hof-header,
+  .about-header {
+    padding-top: 4.5rem;
+  }
+
+  .back-home {
+    margin-bottom: 1rem;
+  }
+}
+
 
