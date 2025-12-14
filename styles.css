@@ -823,6 +823,37 @@ a {
   }
 }
 
+.site-header {
+  position: relative;
+}
+
+.back-home {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  display: inline-block;
+  z-index: 10;
+}
+
+.back-home img {
+  width: 140px;   
+  height: auto;
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  .back-home {
+    top: 0.75rem;
+    left: 0.75rem;
+  }
+
+  .back-home img {
+    width: 110px;
+  }
+}
+
+
 
 
 
