@@ -1,0 +1,762 @@
+/* ================================
+   RESET / BASE
+================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ================================
+   BACKGROUND ANIMATION
+================================ */
+
+@keyframes starScroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 1000px;
+  }
+}
+
+body.stars-bg {
+  margin: 0;
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  color: #ffffff;
+  background: #000 url("Images/stars.webp") repeat;
+  background-size: contain;
+  animation: starScroll 30s linear infinite;
+  filter: brightness(1.35);
+}
+
+/* ================================
+   PAGE WRAPPER
+================================ */
+
+.page-wrapper {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.92);
+}
+
+/* ================================
+   HEADER / NAV
+================================ */
+
+.site-header {
+  text-align: center;
+  padding: 2.5rem 1rem 1.5rem;
+}
+
+.logo-title {
+  margin: 0;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 2.4rem;
+  letter-spacing: 0.08em;
+  color: #ffd6a3;
+  text-shadow: 0 0 10px #ff9d4a, 0 0 18px #ff9d4a;
+}
+
+.main-nav {
+  margin-top: 1.6rem;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-btn img {
+  display: block;
+  max-width: 190px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff66d0;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.nav-btn img:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 0 15px #ffffff, 0 0 25px #ff66d0;
+}
+
+/* ================================
+   GAME OF THE WEEK
+================================ */
+
+.game-of-week {
+  background-color: #5c00c6;
+  text-align: center;
+  padding: 0.75rem 1rem 1.3rem;
+  border-top: 3px solid #32006e;
+  border-bottom: 3px solid #32006e;
+}
+
+.gotw-label {
+  margin: 0;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.gotw-logo {
+  margin-top: 0.55rem;
+  max-height: 110px;
+  width: auto;
+}
+
+/* ================================
+   HERO / INTRO
+================================ */
+
+.intro-section {
+  max-width: 960px;
+  margin: 4rem auto 5rem;
+  padding: 0 1.5rem 4rem;
+  text-align: center;
+}
+
+.intro-heading {
+  margin: 0 0 1.5rem;
+  font-family: "Playfair Display", serif;
+  font-size: 3.4rem;
+  line-height: 1.2;
+  color: #b58bff;
+  text-shadow: 0 0 10px rgba(181, 139, 255, 0.9);
+}
+
+.intro-subheading {
+  margin: 0 0 1.5rem;
+  font-size: 1.35rem;
+  color: #e6dcff;
+}
+
+.intro-body {
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: #d2c3ff;
+}
+
+/* ================================
+   HOME PAGE SECTIONS
+================================ */
+
+.home-section {
+  max-width: 1000px;
+  margin: 0 auto 5rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.section-title {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #ffd6a3;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 10px rgba(255, 157, 74, 0.9);
+}
+
+.home-text {
+  max-width: 720px;
+  margin: 0 auto 1.25rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #e6dcff;
+}
+
+/* ================================
+   FEATURED REVIEWS
+================================ */
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.featured-card {
+  background: rgba(45, 0, 90, 0.8);
+  padding: 1.75rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+}
+
+.featured-card h4 {
+  margin: 0 0 0.6rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.stars {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 0.75rem;
+  color: #ffdd66;
+  margin-bottom: 0.8rem;
+}
+
+.card-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #e6dcff;
+}
+.featured-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+}
+
+
+/* ================================
+   SCORING SECTION
+================================ */
+
+.subtle-section {
+  background: rgba(70, 0, 130, 0.6);
+  padding: 3rem 1.5rem;
+  border-radius: 22px;
+}
+
+.score-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem auto 0;
+  max-width: 520px;
+}
+
+.score-list li {
+  margin-bottom: 0.9rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.score-list strong {
+  color: #ffd6a3;
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  font-size: 0.85rem;
+  color: #aaaaaa;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1024px) {
+  .intro-heading {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-title {
+    font-size: 1.8rem;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .intro-heading {
+    font-size: 2.3rem;
+  }
+
+  .intro-subheading,
+  .intro-body {
+    font-size: 1.05rem;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1rem;
+  }
+}
+/* NEW GAMES PAGE */
+
+.page-title {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 2.5rem;
+  color: #ff4bd8;
+  text-align: center;
+  margin-top: 2rem;
+  text-shadow: 0 0 12px #ff4bd8;
+}
+
+.back-btn {
+  display: inline-block;
+  margin: 1.5rem;
+  padding: 0.6rem 1rem;
+  background: #ff4bd8;
+  color: #000;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 0.7rem;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.page-intro {
+  max-width: 900px;
+  margin: 2rem auto 4rem;
+  padding: 0 1.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ff77e9;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto 6rem;
+  padding: 0 1.5rem;
+}
+
+.game-card {
+  border: 3px solid #ff4bd8;
+  border-radius: 22px;
+  padding: 1.5rem;
+  background: rgba(0,0,0,0.85);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 260px;
+}
+
+
+.game-card img {
+  width: 90px;
+  float: left;
+  margin-right: 1rem;
+  border-radius: 6px;
+}
+/* REVIEW PAGE */
+
+.review-page {
+  max-width: 1000px;
+  margin: 6rem auto;
+  padding: 0 1.5rem;
+  color: #ffffff;
+}
+
+.review-header {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.review-header img {
+  width: 180px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.review-header h1 {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 1.6rem;
+  color: #00d9ff;
+  margin-bottom: 0.6rem;
+}
+
+.review-section {
+  margin-bottom: 2.5rem;
+}
+
+.review-section h2 {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 1rem;
+  color: #ff4bd8;
+  margin-bottom: 0.8rem;
+}
+
+.review-section p {
+  line-height: 1.7;
+  color: #d2c3ff;
+}
+
+@media (max-width: 768px) {
+  .review-header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.review-btn {
+  margin-top: auto;
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 3px solid #ff4bd8;
+  color: #ff4bd8;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 0.7rem;
+  text-align: center;
+  border-radius: 10px;
+  background: transparent;
+  transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.review-btn {
+  margin-top: auto;
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 3px solid #ff4bd8;
+  color: #ff4bd8;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 0.7rem;
+  text-align: center;
+  border-radius: 10px;
+  background: transparent;
+  transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.review-btn:hover {
+  background: #ff4bd8;
+  color: #000;
+  box-shadow: 0 0 12px #ff4bd8;
+}
+
+.featured-card {
+  display: block;
+  cursor: pointer;
+}
+
+
+.featured-card {
+  display: block;
+  cursor: pointer;
+}
+.hof-title {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 2.6rem;
+  color: #ffd6a3;
+  text-align: center;
+  margin: 2.5rem 1rem 1.25rem;
+  text-shadow: 0 0 14px rgba(255, 214, 163, 0.85);
+}
+
+.hof-intro {
+  max-width: 950px;
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ffd6a3;
+  line-height: 1.7;
+  text-shadow: 0 0 10px rgba(255, 214, 163, 0.35);
+}
+
+.hof-layout {
+  max-width: 1200px;
+  margin: 0 auto 5rem;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.hof-slideshow {
+  position: relative;
+  border: 3px solid #ffd6a3;
+  border-radius: 22px;
+  padding: 1.25rem;
+  background: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 16px rgba(255, 214, 163, 0.25);
+}
+
+.hof-figure {
+  margin: 0;
+  text-align: center;
+}
+
+.hof-figure img {
+  width: 100%;
+  max-width: 420px;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.75);
+}
+
+.hof-caption {
+  margin-top: 1rem;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 0.85rem;
+  color: #ffd6a3;
+  text-shadow: 0 0 12px rgba(255, 214, 163, 0.5);
+}
+
+.hof-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  border: 3px solid #ffd6a3;
+  background: rgba(0, 0, 0, 0.85);
+  color: #ffd6a3;
+  font-size: 1.9rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 0 14px rgba(255, 214, 163, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hof-arrow:hover {
+  transform: translateY(-50%) scale(1.03);
+  box-shadow: 0 0 18px rgba(255, 214, 163, 0.55);
+}
+
+.hof-prev { left: 12px; }
+.hof-next { right: 12px; }
+
+.hof-quote {
+  margin: 2rem auto 0;
+  max-width: 560px;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffd6a3;
+  text-shadow: 0 0 12px rgba(255, 214, 163, 0.35);
+}
+
+.hof-table-wrap {
+  border: 3px solid #ffd6a3;
+  border-radius: 22px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 16px rgba(255, 214, 163, 0.25);
+}
+
+.hof-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.hof-table thead th {
+  text-align: left;
+  padding: 1.05rem 1rem;
+  font-family: "Press Start 2P", system-ui;
+  color: #ffd6a3;
+  text-shadow: 0 0 10px rgba(255, 214, 163, 0.35);
+  border-bottom: 2px solid rgba(255, 214, 163, 0.5);
+}
+
+.hof-table tbody td {
+  padding: 1.05rem 1rem;
+  border-top: 2px solid rgba(255, 214, 163, 0.22);
+  color: #ffffff;
+}
+
+.hof-rank {
+  font-family: "Press Start 2P", system-ui;
+  color: #ffd6a3;
+  width: 90px;
+}
+
+@media (max-width: 980px) {
+  .hof-layout { grid-template-columns: 1fr; }
+  .hof-figure img { height: 480px; }
+}
+
+@media (max-width: 520px) {
+  .hof-title { font-size: 1.9rem; }
+  .hof-figure img { height: 420px; }
+}
+
+.about-header {
+  max-width: 1100px;
+  margin: 2.75rem auto 2rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.about-title {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 2.6rem;
+  color: #66ff66;
+  text-shadow: 0 0 14px rgba(102, 255, 102, 0.85);
+  margin: 0 0 1rem;
+}
+
+.about-subtitle {
+  margin: 0 auto;
+  max-width: 800px;
+  color: rgba(230, 255, 230, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.about-layout {
+  max-width: 1100px;
+  margin: 0 auto 5rem;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.25rem;
+}
+
+.about-card {
+  background: rgba(0, 0, 0, 0.85);
+  border: 3px solid rgba(102, 255, 102, 0.75);
+  border-radius: 22px;
+  padding: 1.75rem 1.5rem;
+  box-shadow: 0 0 18px rgba(102, 255, 102, 0.15);
+}
+
+.about-h2 {
+  margin: 0 0 1rem;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 1rem;
+  color: #66ff66;
+  text-shadow: 0 0 12px rgba(102, 255, 102, 0.35);
+}
+
+.about-card p {
+  margin: 0 0 1rem;
+  line-height: 1.7;
+  color: #d8ffd8;
+}
+
+.about-muted {
+  color: rgba(216, 255, 216, 0.85);
+}
+
+.about-list {
+  margin: 1.1rem 0 0;
+  padding-left: 1.2rem;
+  color: #d8ffd8;
+  line-height: 1.8;
+}
+
+.about-list strong {
+  color: #66ff66;
+}
+
+.platform-strip {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.platform-strip span {
+  display: inline-block;
+  border: 2px solid rgba(102, 255, 102, 0.65);
+  color: #66ff66;
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 0.65rem;
+  background: rgba(20, 40, 20, 0.35);
+}
+
+.map-wrapper {
+  margin-top: 1rem;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(102, 255, 102, 0.35);
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 340px;
+  border: 0;
+  display: block;
+}
+
+.social-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.social-btn {
+  display: inline-block;
+  text-align: center;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  border: 3px solid rgba(102, 255, 102, 0.8);
+  color: #66ff66;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 0.7rem;
+  background: rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.social-btn:hover {
+  transform: translateY(-2px);
+  background: #66ff66;
+  color: #000;
+  box-shadow: 0 0 14px rgba(102, 255, 102, 0.75);
+}
+
+@media (max-width: 900px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+}
+.back-home {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  z-index: 20;
+}
+
+.back-home img {
+  width: 160px;          /* controls size */
+  max-width: 40vw;       /* responsive safety */
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
