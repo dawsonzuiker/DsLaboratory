@@ -786,5 +786,27 @@ a {
     margin-bottom: 1rem;
   }
 }
+/* MOBILE: back button should not cover content */
+@media (max-width: 768px) {
+  .page-wrapper {
+    padding-top: 90px; /* creates space under the button */
+  }
+
+  .back-home {
+    position: fixed !important;
+    top: 14px;
+    left: 14px;
+    margin: 0 !important;
+    z-index: 9999;
+  }
+
+  .back-home img {
+    width: 140px;
+    max-width: 60vw;
+    height: auto;
+    display: block;
+  }
+}
+
 
 
