@@ -807,6 +807,22 @@ a {
     display: block;
   }
 }
+@media (max-width: 768px) {
+  .nav-buttons {
+    flex-direction: column;
+    align-items: center; /* ✅ THIS is the key */
+  }
+
+  .nav-btn {
+    width: 100%;
+    max-width: 260px; /* keeps buttons visually centered */
+  }
+
+  .nav-btn img {
+    margin: 0 auto;
+  }
+}
+
 
 
 
