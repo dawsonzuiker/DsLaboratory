@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D’s Laboratory – Wii Sports Resort</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Montserrat:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="stars-bg">
+  <div class="page-wrapper">
+
+ <a href="new-games.html" class="back-home">
+  <img src="Images/Back-NEWGAMES.png" alt="Back">
+</a>
+
+
+    <main class="review-page">
+
+      <section class="review-header">
+        <img src="Images/wiisportscover.jpg" alt="Wii Sports Resort cover art">
+        <div>
+          <h1>Wii Sports Resort</h1>
+          <div class="stars">★★★★★</div>
+          <div class="score">4.82 / 5</div>
+        </div>
+      </section>
+
+      <section class="review-section">
+        <h2>Overview</h2>
+        <p>
+          Wii Sports Resort is a beautiful, nostalgic classic that defined an era
+          of Nintendo gaming. From 2008 through today, it has remained a staple
+          in households across the globe and one of the most universally understood
+          video games ever made.
+        </p>
+      </section>
+
+      <section class="review-section">
+        <h2>Gameplay & Feel</h2>
+        <p>
+          Everyone who has owned a Wii has played Wii Sports Resort. Whether it
+          was bowling, basketball, frisbee, wakeboarding, archery, or swordplay, every
+          mode is easy to understand and immediately fun.
+        </p>
+
+        <p>
+          The motion controls feel natural and intuitive, making the game
+          accessible to players of any age. I remember playing bowling with my
+          grandma when I was a kid, which says everything about how welcoming
+          and user friendly the game is.
+        </p>
+
+        <p>
+          Despite its simplicity, the game has real depth. Competing for high
+          scores, beating personal records, or taking on higher difficulty AI
+          opponents keeps the experience challenging no matter your skill
+          level. It is endlessly replayable with friends and family.
+        </p>
+      </section>
+
+      <section class="review-section">
+        <h2>Gameplay Footage</h2>
+
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/FOjRIIoavG8"
+            title="Wii Sports Resort Gameplay"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+      <section class="review-section">
+        <h2>Final Thoughts</h2>
+        <p>
+          Wii Sports Resort is the best Nintendo sports game of all time. It is
+          timeless, endlessly fun, and built for everyone. I still hook up my
+          Wii today just to play it with friends, and it never loses its magic.
+        </p>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        © 2025 D’s Laboratory · Gameplay footage via
+        <a
+          href="https://www.youtube.com/watch?v=FOjRIIoavG8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          YouTube
+        </a>
+      </p>
+    </footer>
+
+  </div>
+</body>
+</html>
