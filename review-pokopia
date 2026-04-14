@@ -26,21 +26,18 @@
     <main class="review-page">
 
       <section class="review-header">
-        <img src="Images/wiisportscover.jpg" alt="Wii Sports Resort cover art">
+        <img src="Images/pokopiacover.webp" alt="Wii Sports Resort cover art">
         <div>
-          <h1>Wii Sports Resort</h1>
+          <h1>Pokemon Pokopia</h1>
           <div class="stars">★★★★★</div>
-          <div class="score">4.82 / 5</div>
+          <div class="score">4.7 / 5</div>
         </div>
       </section>
 
       <section class="review-section">
         <h2>Overview</h2>
         <p>
-          Wii Sports Resort is a beautiful, nostalgic classic that defined an era
-          of Nintendo gaming. From 2008 through today, it has remained a staple
-          in households across the globe and one of the most universally understood
-          video games ever made.
+          Pokopia is a beautiful, relaxing Pokémon experience that flips the series into something completely different. Instead of battling, it’s all about building, exploring, and bringing a quiet world back to life, giving it a nostalgic but peaceful vibe that really sticks with you.
         </p>
       </section>
 
