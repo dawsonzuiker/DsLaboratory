@@ -26,7 +26,7 @@
     <main class="review-page">
 
       <section class="review-header">
-        <img src="Images/pokopiacover.webp" alt="Wii Sports Resort cover art">
+        <img src="Images/pokopiacover.webp" alt="pokopiacover">
         <div>
           <h1>Pokemon Pokopia</h1>
           <div class="stars">★★★★★</div>
@@ -44,9 +44,9 @@
       <section class="review-section">
         <h2>Gameplay & Feel</h2>
         <p>
-          Everyone who has owned a Wii has played Wii Sports Resort. Whether it
-          was bowling, basketball, frisbee, wakeboarding, archery, or swordplay, every
-          mode is easy to understand and immediately fun.
+          Pokopia’s gameplay is slow, sandbox-style, and really focused on exploration and building rather than pressure or competition. You’re moving through open areas, gathering resources, shaping the environment, and unlocking new parts of the world as you go. A lot of it is just interacting with the space and gradually turning something empty into something alive, which makes the progression feel natural instead of forced.
+
+The feel is super calm and almost meditative. There’s no rush, no real stress, just this steady loop of exploring, creating, and watching the world improve. It has that cozy, slightly lonely vibe at first, but as more Pokémon show up and the world fills in, it shifts into something warm and satisfying. It’s the kind of game you play to relax, not to grind.
         </p>
 
         <p>
