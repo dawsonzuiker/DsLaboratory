@@ -852,7 +852,52 @@ a {
     width: 110px;
   }
 }
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 25px;
+}
 
+.game-card {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 24px;
+  min-height: 240px;
+  background: black;
+  border: 3px solid #ff4df8;
+  border-radius: 20px;
+}
+
+.game-card img {
+  width: 115px;
+  height: 165px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game-desc {
+  color: #ff8cff;
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 8px 0 12px;
+}
+
+@media (max-width: 900px) {
+  .games-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 
